@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--accent: #6c5ad5;
+	--hover: #524c6b;
+	--secondary: #e5e9eb;
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+/* Tailwind Classes */
+.primarybtn {
+	@apply bg-[--accent] ~px-4/12 ~py-2/3 text-white font-medium rounded-2xl transition-all duration-300 ease-in-out hover:bg-[--hover];
 }
