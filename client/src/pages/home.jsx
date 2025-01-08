@@ -11,9 +11,7 @@ const Home = () => {
 				<div className="flex flex-col gap-8 items-start justify-center col-span-3">
 					<span className="~text-3xl/6xl font-bold ">
 						Remove Image <br />
-						<span className="bg-gradient-to-r from-[--accent] via-[--blue] to-[--lilac] text-transparent bg-clip-text">
-							backgrounds
-						</span>{" "}
+						<span className="text-gradient1">backgrounds</span>{" "}
 						Instantly <br />
 						online for free.
 					</span>
@@ -41,28 +39,68 @@ const Home = () => {
 			</div>
 
 			{/* Steps Section */}
-			<div className="w-full ~py-16/64 flex flex-col justify-center items-center ">
-				<span className="~text-2xl/5xl font-bold">
-					Get rid image backgrounds in Seconds
+			<div className="w-full ~py-16/32 flex flex-col justify-center items-center ">
+				<span className="~text-2xl/5xl font-semibold text-gradient2 text-center">
+					Remove Image Backgrounds <br /> in Just a Few Simple Steps
 				</span>
 
 				{/* Steps Grid */}
-				<div className="w-full grid grid-cols-3 gap-16 py-32">
+				<div className="w-full grid grid-cols-3 gap-16 ~py-8/16">
 					{/* Item 1 */}
-					<div className="w-full border-2 rounded-xl shadow-sm h-[250px] flex justify-center items-center">
-						{" "}
-						1
+					<div className="w-full p-8 border border-[--secondary] rounded-xl shadow-xl shadow-slate-200 flex justify-start items-start gap-5 transition duration-500 hover:scale-105">
+						<img src={assets.upload_icon} alt="Upload Icon" />
+						<div className="flex flex-col justify-start items-start">
+							<span className="~text-lg/2xl font-semibold">
+								Upload Image
+							</span>
+							<p className="text-gradient2 text-left">
+								Select and upload your image to get started. No
+								registration required.
+							</p>
+						</div>
 					</div>
-					{/* Item 1 */}
-					<div className="w-full border-2 rounded-xl shadow-sm h-[250px] flex justify-center items-center">
-						{" "}
-						2
+
+					{/* Item 2 */}
+					<div className="w-full p-8 border border-[--secondary] rounded-xl shadow-xl shadow-slate-200 flex justify-start items-start gap-5 transition duration-500 hover:scale-105">
+						<img
+							src={assets.remove_bg_icon}
+							alt="Remove Background Icon"
+						/>
+						<div className="flex flex-col justify-start items-start">
+							<span className="~text-lg/2xl font-semibold">
+								Remove Background
+							</span>
+							<p className="text-gradient2">
+								Our tool automatically removes the background
+								for a clean result.
+							</p>
+						</div>
 					</div>
-					{/* Item 1 */}
-					<div className="w-full border-2 rounded-xl shadow-sm h-[250px] flex justify-center items-center">
-						{" "}
-						3
+
+					{/* Item 3 */}
+					<div className="w-full p-8 border border-[--secondary] rounded-xl shadow-xl shadow-slate-200 flex justify-start items-start gap-5 transition duration-500 hover:scale-105">
+						<img src={assets.download_icon} alt="Download Icon" />
+						<div className="flex flex-col justify-start items-start">
+							<span className="~text-lg/2xl font-semibold">
+								Download Image
+							</span>
+							<p className="text-gradient2">
+								Download your edited image instantly in high
+								quality for free.
+							</p>
+						</div>
 					</div>
+				</div>
+			</div>
+
+			{/* Showcase  */}
+			<div className="w-full flex flex-col justify-center items-center ">
+				<div className="">
+					<img
+						src={assets.image_w_bg}
+						alt=""
+						className="w-full rounded-2xl"
+					/>
 				</div>
 			</div>
 		</div>

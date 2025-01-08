@@ -25,3 +25,10 @@
 .uploadBtn {
 	@apply cursor-pointer flex gap-3 items-center justify-center bg-gradient-to-r from-[--accent] via-[--blue] to-[--lilac] ~px-4/8 ~py-2/4 text-white rounded-3xl transition-all duration-500 ease-in-out hover:scale-105;
 }
+
+.text-gradient1 {
+	@apply bg-gradient-to-r from-[--accent] via-[--blue] to-[--lilac] text-transparent bg-clip-text;
+}
+.text-gradient2 {
+	@apply bg-gradient-to-br from-gray-900 to-gray-500 bg-clip-text text-transparent;
+}
