@@ -8,7 +8,7 @@ const Steps = () => {
 			</span>
 
 			{/* Steps Grid */}
-			<div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-16 ~py-8/16">
+			<div className="w-full grid grid-cols-1 xl:grid-cols-3 gap-5 lg:gap-16 ~py-8/16">
 				{/* Item 1 */}
 				<div className="w-full p-8 border border-[--secondary] rounded-xl shadow-xl shadow-slate-200 flex justify-start items-start gap-5 transition duration-500 hover:scale-105">
 					<img src={assets.upload_icon} alt="Upload Icon" />

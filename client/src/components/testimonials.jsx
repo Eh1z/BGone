@@ -9,7 +9,7 @@ const Testimonials = () => {
 			</span>
 
 			{/* Testimonial Grid */}
-			<div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-16 ~py-8/16">
+			<div className="w-full grid grid-cols-1 xl:grid-cols-3 gap-5 lg:gap-16 ~py-8/16">
 				{/* Item 1 */}
 				<div className="w-full p-8 border border-[--secondary] rounded-xl shadow-xl shadow-slate-200 flex flex-col justify-start items-start transition duration-500 hover:scale-105">
 					<QuoteIcon
