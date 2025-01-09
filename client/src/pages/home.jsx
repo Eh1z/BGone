@@ -6,8 +6,8 @@ const Home = () => {
 			<Hero />
 			<Steps />
 			<Showcase />
-			<CTA />
 			<Testimonials />
+			<CTA />
 		</div>
 	);
 };

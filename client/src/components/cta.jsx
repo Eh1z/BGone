@@ -19,7 +19,7 @@ const CTA = () => {
 	}, []);
 
 	return (
-		<div className="w-full ~py-3/32 flex flex-col justify-center items-center gap-16 ">
+		<div className="w-full ~py-5/16 flex flex-col justify-center items-center gap-16 ">
 			<div className="text-center ~text-xl/5xl font-bold capitalize  w-full  flex items-center justify-center">
 				<TextTransition springConfig={presets.wobbly}>
 					<span className=" text-gradient2 w-full">
