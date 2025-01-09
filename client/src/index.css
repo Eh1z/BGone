@@ -22,7 +22,13 @@
 
 /* Tailwind Classes */
 .primaryBtn {
-	@apply bg-[--accent] ~px-4/8 ~py-2/3 text-white font-medium rounded-3xl transition-all duration-300 ease-in-out hover:bg-[--hover];
+	@apply bg-gray-800 ~px-4/8 ~py-2/3 text-white font-medium rounded-xl transition-all duration-300 ease-in-out hover:bg-[--hover];
+}
+.secondaryBtn {
+	@apply border border-[--accent] ~px-4/8 ~py-2/3 text-[--accent] font-medium rounded-xl transition-all duration-300 ease-in-out hover:bg-[--accent] hover:text-white;
+}
+.downloadBtn {
+	@apply ~px-4/8 ~py-2/3 border  bg-gradient-to-r from-[--accent] via-[--blue] to-[--lilac] text-white font-medium rounded-xl transition-all duration-300 ease-in-out hover:to-[--blue];
 }
 
 .uploadBtn {
