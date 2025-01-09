@@ -3,9 +3,9 @@ import { UploadIcon } from "@radix-ui/react-icons";
 
 const Hero = () => {
 	return (
-		<div className="w-full grid grid-cols-1-reverse lg:grid-cols-6">
+		<div className="w-full grid gap-8 grid-cols-1-reverse lg:grid-cols-6 ~py-8/32">
 			{/* Hero Text */}
-			<div className="flex flex-col gap-8 items-start justify-center col-span-3">
+			<div className=" flex flex-col gap-8 items-start justify-center col-span-3">
 				<span className="~text-3xl/6xl font-black ">
 					Remove Image <br />
 					<span className="text-gradient1">backgrounds</span>{" "}

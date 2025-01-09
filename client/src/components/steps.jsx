@@ -13,10 +13,10 @@ const Steps = () => {
 				<div className="w-full p-8 border border-[--secondary] rounded-xl shadow-xl shadow-slate-200 flex justify-start items-start gap-5 transition duration-500 hover:scale-105">
 					<img src={assets.upload_icon} alt="Upload Icon" />
 					<div className="flex flex-col justify-start items-start">
-						<span className="~text-lg/2xl font-bold">
+						<span className="~text-base/2xl font-semibold">
 							Upload Image
 						</span>
-						<p className="text-gradient2 text-left">
+						<p className="text-gradient2 ~text-xs/base">
 							Select and upload your image to get started. No
 							registration required.
 						</p>
@@ -30,10 +30,10 @@ const Steps = () => {
 						alt="Remove Background Icon"
 					/>
 					<div className="flex flex-col justify-start items-start">
-						<span className="~text-lg/2xl font-semibold">
+						<span className="~text-base/2xl font-semibold">
 							Remove Background
 						</span>
-						<p className="text-gradient2">
+						<p className="text-gradient2 ~text-xs/base">
 							Our tool automatically removes the background for a
 							clean result.
 						</p>
@@ -44,10 +44,10 @@ const Steps = () => {
 				<div className="w-full p-8 border border-[--secondary] rounded-xl shadow-xl shadow-slate-200 flex justify-start items-start gap-5 transition duration-500 hover:scale-105">
 					<img src={assets.download_icon} alt="Download Icon" />
 					<div className="flex flex-col justify-start items-start">
-						<span className="~text-lg/2xl font-sbold">
+						<span className="~text-base/2xl font-semibold">
 							Download Image
 						</span>
-						<p className="text-gradient2">
+						<p className="text-gradient2 ~text-xs/base">
 							Download your edited image instantly in high quality
 							for free.
 						</p>
