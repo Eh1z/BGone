@@ -1,10 +1,12 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
+import connectDB from "./configs/connectDB.js";
 
 // App Configurations
 const port = process.env.PORT || 8000;
 const app = express();
+await connectDB();
 
 // Middlewares Config
 app.use(express.json());
