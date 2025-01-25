@@ -6,7 +6,7 @@
 
 :root {
 	--accent: #5d5ce0;
-	--hover: #524c6b;
+	--hover: #43439c;
 	--primary: #262626;
 	--secondary: #dadeff;
 
@@ -22,7 +22,7 @@
 
 /* Tailwind Classes */
 .primaryBtn {
-	@apply bg-gray-800 ~px-4/8 ~py-2/3 text-white font-medium  ~text-xs/base  rounded-xl transition-all duration-300 ease-in-out hover:bg-[--hover];
+	@apply bg-[--primary] ~px-4/8 ~py-2/3 text-white font-medium  ~text-xs/base  rounded-xl transition-all duration-300 ease-in-out hover:bg-[--hover];
 }
 .secondaryBtn {
 	@apply border border-[--accent] ~px-2/6 ~py-2/3 text-[--accent] font-medium  ~text-xs/base  rounded-xl transition-all duration-300 ease-in-out hover:bg-[--accent] hover:text-white;
