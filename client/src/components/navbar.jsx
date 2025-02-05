@@ -20,10 +20,10 @@ const Navbar = () => {
 				<img src={assets.logo} alt="logo" className="~w-32/52" />
 			</a>
 			{isSignedIn ? (
-				<div className="drop-shadow-3xl">
-					<button>
-						<img src={assets.credit_icon} alt="" />
-						<p>Credits: {credits}</p>
+				<div className="drop-shadow-3xl flex items-center gap-8">
+					<button className="flex justify-center items-center gap-3 py-2 px-5 bg-[--secondary] rounded-2xl">
+						<img src={assets.credit_icon} alt="" className="w-6" />
+						<span className="font-bold">{credits}</span>
 					</button>
 					<UserButton />
 				</div>
