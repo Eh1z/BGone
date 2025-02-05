@@ -11,7 +11,7 @@ const Navbar = () => {
 				<img src={assets.logo} alt="logo" className="~w-32/52" />
 			</a>
 			{isSignedIn ? (
-				<div className="drop-shadow-xl">
+				<div className="drop-shadow-3xl">
 					<UserButton />
 				</div>
 			) : (
