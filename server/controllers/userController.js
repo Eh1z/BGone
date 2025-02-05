@@ -3,7 +3,7 @@ import { User } from "../models/userModel.js";
 
 // API Controller to manage clerk user with database
 // http://localhost:8000/api/user/webhooks
-const clerkWebhooks = async (req, res) => {
+export const clerkWebhooks = async (req, res) => {
 	try {
 		// Create svix instance with clerk webhook secret
 		const whook = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
@@ -58,4 +58,14 @@ const clerkWebhooks = async (req, res) => {
 	}
 };
 
-export { clerkWebhooks };
+// Fetch User Credit Data
+export const userCredits = async (req, res) => {
+	try {
+		const { clerkId } = req.body;
+		const userData = await User.findOne({ clerkId });
+		res.json({ success: true, credits: userData.balance });
+	} catch (error) {
+		console.error(error.message);
+		res.json({ success: false, message: error.message });
+	}
+};
