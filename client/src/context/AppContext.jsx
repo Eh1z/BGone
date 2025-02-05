@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 export const AppContext = createContext();
 const AppContextProvider = (props) => {
-	const [credits, setCredits] = useState(false);
+	const [credits, setCredits] = useState(null);
 	const backendUrl = import.meta.env.VITE_BACKEND_URL;
 	const { getToken } = useAuth();
 
@@ -33,7 +33,9 @@ const AppContextProvider = (props) => {
 	};
 
 	return (
-		<AppContextProvider value={value}>{props.children}</AppContextProvider>
+		<AppContext.Provider value={value}>
+			{props.children}
+		</AppContext.Provider>
 	);
 };
 
